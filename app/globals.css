@@ -2,26 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
 }
+
+
+
+button{
+  margin: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  background-color: rgb(88, 118, 250); 
+  color: rgb(235, 232, 232);
+}
+
+button:hover{
+  background-color: rgb(242, 240, 240);
+  color: black;
+}
+
+h1{
+  
+  font-weight: bold;
+  gap: 0;
+  background: linear-gradient(to left, #8eb3fc, #91eef1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.img-container {
+  
+  break-inside: avoid;
+  margin: 4px;
+  padding: 1px;
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+}
+
