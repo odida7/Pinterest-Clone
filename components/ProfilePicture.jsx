@@ -13,8 +13,8 @@ export default function ProfilePicture() {
        <div className='flex flex-row items-center justify-between gap-1'> 
        <Link href={`/profile/${session?.user?._id}`}>
           {session?.user?.image 
-          ? <Image src={session?.user?.image} alt='profile-pic' width={28} height={28} className='object-cover rounded-full'/> 
-          : <Image src='/assets/images/noAvatar.png' alt='profile-pic' width={28} height={28} className='object-cover rounded-full'/> 
+          ? <Image src={session?.user?.image} alt='profile-pic' width={24} height={24} className='object-cover rounded-full w-10 h-10'/> 
+          : <Image src='/assets/images/noAvatar.png' alt='profile-pic' width={28} height={28} className='object-cover rounded-full w-10 h-10'/> 
           }
         </Link>
           <span className='text-sm invisible sm:visible text-slate-500'>{session?.user?.name}</span>

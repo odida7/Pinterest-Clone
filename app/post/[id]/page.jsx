@@ -195,7 +195,7 @@ const user = users.find(u => u._id === post.userId); // Find the user associated
               <div className='flex flex-row sm:gap-4 gap-0 relative items-center'>
                 <Link href={`/profile/${user?._id}`}>
                   {user?.image? 
-                  <Image src={user?.image} alt='profile-pic' width={38} height={38} className='object-cover rounded-full'/> 
+                  <Image src={user?.image} alt='profile-pic' width={38} height={38} className='object-cover rounded-full w-12 h-12'/> 
                   :
                   <Image src='/assets/images/noAvatar.png' alt='profile-pic' width={28} height={28} className='object-cover rounded-full'/> 
                   }
@@ -278,8 +278,8 @@ const user = users.find(u => u._id === post.userId); // Find the user associated
                   <div className='flex flex-row gap-2 p-1'>
                     <Link href={`/profile/${user?._id && user?._id}`}>
                      {user?.image 
-                       ? <Image src={user?.image} alt='profile-pic' width={16} height={16} className='object-cover rounded-full overflow-hidden' />
-                      : <Image src='/assets/images/noAvatar.png' alt='profile-pic' width={16} height={16} className='object-cover rounded-full' />
+                       ? <Image src={user?.image} alt='profile-pic' width={16} height={16} className='object-cover rounded-full overflow-hidden w-6 h-6' />
+                      : <Image src='/assets/images/noAvatar.png' alt='profile-pic' width={16} height={16} className='object-cover rounded-full w-6 h-6' />
                       }
                   </Link>
                   <div className='flex flex-col gap-0'>

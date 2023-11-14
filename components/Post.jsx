@@ -62,8 +62,8 @@ export default function Post({data}) {
                 <Link href={`/profile/${user?._id && user?._id}`}>
                     
                     {user?.image 
-                      ? <Image src={user?.image} alt='profile-pic' width={22} height={22} className='object-cover rounded-full overflow-hidden' />
-                      : <Image src='/assets/images/noAvatar.png' alt='profile-pic' width={22} height={22} className='object-cover rounded-full' />
+                      ? <Image src={user?.image} alt='profile-pic' width={22} height={22} className='object-cover rounded-full overflow-hidden w-8 h-8' />
+                      : <Image src='/assets/images/noAvatar.png' alt='profile-pic' width={22} height={22} className='object-cover rounded-full w-8 h-8' />
                     }
                     </Link>
                     {user && <span className='sm:text-sm text-xs text-slate-700'>{user?.name}</span>}

@@ -87,9 +87,9 @@ export default function page({params}) {
         <div className='flex flex-col items-center justify-center m-2 p-2'>
           <div>
             {user?.image? 
-             <Image src={user?.image} alt='profile-pic' width={150} height={150} className='object-cover rounded-full'/> 
+             <Image src={user?.image} alt='profile-pic' width={150} height={150} className='object-cover rounded-full w-48 h-48'/> 
              :
-             <Image src='/assets/images/noAvatar.png' alt='profile-pic' width={150} height={150} className='object-cover rounded-full'/> 
+             <Image src='/assets/images/noAvatar.png' alt='profile-pic' width={150} height={150} className='object-cover rounded-full w-48 h-48'/> 
              }
           </div>
  
